@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Signup</title>
+
+    <style>
+
+        body{
+
+            background:#0f172a;
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            height:100vh;
+
+            font-family:Arial;
+
+        }
+
+        .box{
+
+            background:#1e293b;
+
+            padding:40px;
+
+            border-radius:20px;
+
+            width:300px;
+
+            text-align:center;
+
+        }
+
+        h1{
+
+            color:orange;
+
+            margin-bottom:20px;
+
+        }
+
+        input{
+
+            width:100%;
+
+            padding:15px;
+
+            margin:10px 0;
+
+            border:none;
+
+            border-radius:10px;
+
+        }
+
+        button{
+
+            width:100%;
+
+            padding:15px;
+
+            background:orange;
+
+            border:none;
+
+            border-radius:10px;
+
+            font-size:18px;
+
+            font-weight:bold;
+
+            cursor:pointer;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>Signup</h1>
+
+        <input
+        type="email"
+        id="email"
+        placeholder="Enter Email">
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Enter Password">
+
+        <button onclick="signup()">
+            Create Account
+        </button>
+
+    </div>
+
+
+
+
+
+<script type="module">
+
+// Import Firebase
+
+import { initializeApp }
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import {
+getAuth,
+createUserWithEmailAndPassword
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+
+
+
+// PASTE YOUR FIREBASE CONFIG HERE
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAhUE7vCI6RAMykHPwIGXHe0HzsqVb3s28",
+  authDomain: "fault-finder-by-srs-autoworks.firebaseapp.com",
+  projectId: "fault-finder-by-srs-autoworks",
+  storageBucket: "fault-finder-by-srs-autoworks.firebasestorage.app",
+  messagingSenderId: "238475446925",
+  appId: "1:238475446925:web:9b186f7dee783e3349f0c4",
+  measurementId: "G-XSP7NL7CZ4"
+};
+
+
+
+// Initialize Firebase
+
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+
+
+
+// Signup Function
+
+window.signup = function(){
+
+    const email =
+    document.getElementById("email").value;
+
+    const password =
+    document.getElementById("password").value;
+
+
+
+
+
+createUserWithEmailAndPassword(
+auth,
+email,
+password
+)
+
+.then((userCredential)=>{
+
+    alert("Account Created Successfully");
+
+})
+
+.catch((error)=>{
+
+    alert(error.message);
+
+});
+
+}
+
+</script>
+
+</body>
+</html>

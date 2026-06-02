@@ -1,0 +1,471 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:
+    linear-gradient(to right, #0f172a, #1e293b);
+
+    font-family:Arial, sans-serif;
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+
+
+
+
+/* NAVBAR */
+
+.navbar{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(10px);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.nav-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.nav-logo{
+
+    width:250px;
+
+    height:65px;
+
+    object-fit:contain;
+
+    border-radius:15px;
+
+}
+
+.nav-left h2{
+
+    color:orange;
+
+    font-size:28px;
+
+}
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.nav-right a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+.nav-right a:hover{
+
+    color:orange;
+
+}
+
+
+
+
+
+/* MAIN CONTAINER */
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding-top:50px;
+
+}
+
+
+
+
+
+/* HERO SECTION */
+
+.hero-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:60px;
+
+}
+
+.main-icon{
+
+    width:140px;
+
+    height:140px;
+
+    background:
+    linear-gradient(to right, orange, gold);
+
+    border-radius:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.4);
+
+}
+
+.main-icon i{
+
+    font-size:70px;
+
+    color:#0f172a;
+
+}
+
+.hero-section h1{
+
+    font-size:70px;
+
+    color:orange;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    font-size:24px;
+
+    color:#cbd5e1;
+
+}
+
+
+
+
+
+/* CARD SECTION */
+
+.button-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+
+
+
+
+/* CARDS */
+
+.card{
+
+    width:260px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+
+    padding:35px 25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.4);
+
+    transition:0.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:orange;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+/* BUTTON */
+
+button{
+
+    background:
+    linear-gradient(to right, orange, gold);
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:15px 25px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* RESULT SECTION */
+
+#result{
+
+    width:100%;
+
+    margin-top:60px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+
+    padding:50px;
+
+    min-height:250px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.4);
+
+    transition:0.4s;
+
+    animation:fadeIn 0.4s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+#result h2{
+
+    color:orange;
+
+    margin-bottom:20px;
+
+    font-size:35px;
+
+}
+
+#result p{
+
+    font-size:22px;
+
+    color:#cbd5e1;
+
+}
+
+#result ul{
+
+    list-style:none;
+
+    margin-top:25px;
+
+}
+
+#result li{
+
+    background:rgba(255,255,255,0.1);
+
+    margin:15px 0;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+#result li:hover{
+
+    transform:scale(1.02);
+
+    background:rgba(255,255,255,0.15);
+
+}
+
+#result button{
+
+    margin-top:20px;
+
+}
+
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    .nav-right{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .hero-section h1{
+
+        font-size:50px;
+
+    }
+
+    .subtitle{
+
+        font-size:18px;
+
+    }
+
+    .card{
+
+        width:100%;
+
+    }
+
+}

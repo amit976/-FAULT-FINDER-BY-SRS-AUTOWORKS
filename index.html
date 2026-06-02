@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>FaultFinder</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="nav-left">
+
+     <img
+src="images/logo.png"
+class="nav-logo">
+
+        <h2>FAULT FINDER</h2>
+
+    </div>
+
+
+
+
+
+    <div class="nav-right">
+
+        <a href="#">Home</a>
+
+        <a href="#">Diagnose</a>
+
+        <a href="#">About</a>
+
+        <a href="login.html">Login</a>
+
+    </div>
+
+</nav>
+
+
+
+
+
+<!-- MAIN CONTAINER -->
+
+<div class="container">
+
+
+
+
+
+    <!-- HERO SECTION -->
+
+    <div class="hero-section">
+
+        <div class="main-icon">
+
+            <i class="fa-solid fa-car"></i>
+
+        </div>
+
+        <h1>FAULT FINDER</h1>
+
+        <p class="subtitle">
+            Smart Car Diagnosis System
+        </p>
+
+    </div>
+
+
+
+
+
+    <!-- DIAGNOSIS CARDS -->
+
+    <div class="button-container">
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-car"></i>
+
+            <h3>Car Not Starting</h3>
+
+            <button onclick="showProblem('start')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-snowflake"></i>
+
+            <h3>AC Problem</h3>
+
+            <button onclick="showProblem('ac')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-temperature-high"></i>
+
+            <h3>Heating Problem</h3>
+
+            <button onclick="showProblem('heating')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-gauge-high"></i>
+
+            <h3>Pickup Problem</h3>
+
+            <button onclick="showProblem('pickup')">
+                Diagnose
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- RESULT SECTION -->
+
+    <div id="result">
+
+        <h2>Vehicle Diagnosis Result</h2>
+
+        <p>
+            Select a problem to begin diagnosis.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

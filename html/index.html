@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fault Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+   <div class="logo-section">
+
+    <div class="main-icon">
+        <i class="fa-solid fa-car-side"></i>
+    </div>
+
+    <h1>FaultFinder</h1>
+
+    <p class="subtitle">
+        Smart Car Diagnosis System
+    </p>
+
+</div>
+
+        <div class="button-container">
+
+    <div class="card">
+
+        <i class="fa-solid fa-car"></i>
+
+        <h3>Car Not Starting</h3>
+
+        <button onclick="showProblem('start')">
+            Diagnose
+        </button>
+
+    </div>
+
+
+
+
+
+    <div class="card">
+
+        <i class="fa-solid fa-snowflake"></i>
+
+        <h3>AC Problem</h3>
+
+        <button onclick="showProblem('ac')">
+            Diagnose
+        </button>
+
+    </div>
+
+
+
+
+
+    <div class="card">
+
+        <i class="fa-solid fa-temperature-high"></i>
+
+        <h3>Heating Problem</h3>
+
+        <button onclick="showProblem('heating')">
+            Diagnose
+        </button>
+
+    </div>
+
+
+
+
+
+    <div class="card">
+
+        <i class="fa-solid fa-gauge-high"></i>
+
+        <h3>Pickup Problem</h3>
+
+        <button onclick="showProblem('pickup')">
+            Diagnose
+        </button>
+
+    </div>
+
+</div>
+
+        <div id="result">
+
+            Select a problem to diagnose
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
