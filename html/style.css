@@ -1,0 +1,241 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    overflow-x:hidden;
+
+    overflow-y:scroll;
+
+}
+
+body{
+
+    background:linear-gradient(to right, #0f172a, #1e293b);
+
+    font-family:Arial, sans-serif;
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+/* BUTTON */
+
+button{
+
+    background:linear-gradient(to right, orange, gold);
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:15px 25px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+    background:#ffffff !important;
+
+    color:#0f172a !important;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.15) !important;
+
+}
+
+/* RESULT SECTION */
+
+#result{
+
+    width:100%;
+
+    margin-top:60px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+
+    padding:50px;
+
+    min-height:250px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+    transition:0.4s;
+
+    animation:fadeIn 0.4s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+#result h2{
+
+    color:orange;
+
+    margin-bottom:20px;
+
+    font-size:35px;
+
+}
+
+#result p{
+
+    font-size:22px;
+
+    color:#cbd5e1;
+
+}
+
+#result ul{
+
+    list-style:none;
+
+    margin-top:25px;
+
+}
+
+#result li{
+
+    background:rgba(255,255,255,0.1);
+
+    margin:15px 0;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+#result li:hover{
+
+    transform:scale(1.02);
+
+    background:rgba(255,255,255,0.15);
+
+}
+
+#result button{
+
+    margin-top:20px;
+
+}
+
+#result button:hover{
+
+    transform:scale(1.05);
+
+    background:#ffffff;
+
+    color:#0f172a;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+.logo-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:40px;
+
+    text-align:center;
+
+}
+
+.main-icon{
+
+    width:140px;
+
+    height:140px;
+
+    background:linear-gradient(to right, orange, gold);
+
+    border-radius:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+}
+
+.main-icon i{
+
+    font-size:70px;
+
+    color:#0f172a;
+
+}
+
+.logo-section h1{
+
+    font-size:70px;
+
+    color:orange;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    font-size:24px;
+
+    color:#cbd5e1;
+
+}

@@ -8,6 +8,14 @@
 
 }
 
+html{
+
+    overflow-x:hidden;
+
+    overflow-y:scroll;
+
+}
+
 body{
 
     background:
@@ -42,12 +50,6 @@ body{
     background:rgba(255,255,255,0.05);
 
     backdrop-filter:blur(10px);
-
-    position:sticky;
-
-    top:0;
-
-    z-index:1000;
 
 }
 
@@ -155,6 +157,291 @@ body{
 
 }
 
+.section-heading{
+
+    max-width:900px;
+
+    margin:0 auto 35px;
+
+    text-align:center;
+
+}
+
+.section-heading h2{
+
+    font-size:36px;
+
+    color:orange;
+
+    margin-bottom:12px;
+
+}
+
+.section-heading p{
+
+    font-size:18px;
+
+    color:#cbd5e1;
+
+    margin:0;
+
+    line-height:1.6;
+
+}
+
+.info-section,
+.feature-section,
+.faq-section,
+.cta-section{
+
+    width:100%;
+
+    margin-top:70px;
+
+}
+
+.steps-row,
+.feature-row,
+.faq-row{
+
+    width:100%;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+    justify-content:center;
+
+}
+
+.step-card,
+.feature-card,
+.faq-card{
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+    transition:0.3s;
+
+    min-width:260px;
+
+    flex:1 1 280px;
+
+}
+
+.step-card:hover,
+.feature-card:hover,
+.faq-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.step-card span{
+
+    display:inline-block;
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:16px;
+
+    background:linear-gradient(to right, orange, gold);
+
+    color:#0f172a;
+
+    font-weight:bold;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:18px;
+
+}
+
+.step-card h4,
+.feature-card h4,
+.faq-card h4{
+
+    color:white;
+
+    margin-bottom:12px;
+
+    font-size:22px;
+
+}
+
+.step-card p,
+.feature-card p,
+.faq-card p{
+
+    color:#cbd5e1;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
+
+.feature-card i{
+
+    color:orange;
+
+    font-size:32px;
+
+    margin-bottom:18px;
+
+}
+
+.cta-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:60px;
+
+}
+
+.cta-card{
+
+    width:100%;
+
+    max-width:900px;
+
+    background:rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:30px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+
+}
+
+.cta-card h2{
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+    color:white;
+
+}
+
+.cta-card p{
+
+    font-size:20px;
+
+    color:#cbd5e1;
+
+    margin-bottom:28px;
+
+}
+
+.cta-button{
+
+    display:inline-block;
+
+    background:linear-gradient(to right, orange, gold);
+
+    color:#0f172a;
+
+    padding:16px 32px;
+
+    border-radius:14px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+}
+
+.cta-button:hover{
+
+    transform:scale(1.03);
+
+}
+
+.site-footer{
+
+    width:100%;
+
+    margin-top:55px;
+
+    padding:25px 0 40px;
+
+    border-top:1px solid rgba(255,255,255,0.1);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    justify-content:center;
+
+}
+
+.footer-links a{
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+}
+
+.footer-links a:hover{
+
+    color:orange;
+
+}
+
+.site-footer p{
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+    margin:0;
+
+}
+
 .main-icon{
 
     width:140px;
@@ -244,7 +531,6 @@ body{
     border-radius:25px;
 
     padding:35px 25px;
-
     display:flex;
 
     flex-direction:column;
@@ -316,6 +602,12 @@ button{
 button:hover{
 
     transform:scale(1.05);
+
+    background:#ffffff;
+
+    color:#0f172a;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
 
 }
 
@@ -415,6 +707,7 @@ button:hover{
 #result li:hover{
 
     transform:scale(1.02);
+    
 
     background:rgba(255,255,255,0.15);
 
@@ -423,6 +716,18 @@ button:hover{
 #result button{
 
     margin-top:20px;
+
+}
+
+#result button:hover{
+
+    transform:scale(1.05) !important;
+
+    background:#ffffff !important;
+
+    color:#0f172a !important;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.15) !important;
 
 }
 
