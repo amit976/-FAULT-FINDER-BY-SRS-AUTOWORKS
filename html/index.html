@@ -1,108 +1,491 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
-    <title>Fault Finder</title>
+    <title>FaultFinder</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
 <body>
 
-   <div class="logo-section">
 
-    <div class="main-icon">
-        <i class="fa-solid fa-car-side"></i>
-    </div>
 
-    <h1>FaultFinder</h1>
+<!-- NAVBAR -->
 
-    <p class="subtitle">
-        Smart Car Diagnosis System
-    </p>
+<nav class="navbar">
 
-</div>
+    <div class="nav-left">
 
-        <div class="button-container">
+    <img
+src="../images/logo.png"
+class="nav-logo">
 
-    <div class="card">
-
-        <i class="fa-solid fa-car"></i>
-
-        <h3>Car Not Starting</h3>
-
-        <button onclick="showProblem('start')">
-            Diagnose
-        </button>
+        <h2>FAULT FINDER</h2>
 
     </div>
 
+    <div class="nav-right">
 
+        <a href="#">Home</a>
 
+        <a href="#">Diagnose</a>
 
+        <a href="#">About</a>
 
-    <div class="card">
-
-        <i class="fa-solid fa-snowflake"></i>
-
-        <h3>AC Problem</h3>
-
-        <button onclick="showProblem('ac')">
-            Diagnose
-        </button>
+        <a href="login.html">Login</a>
 
     </div>
 
+</nav>
 
 
 
+<!-- MAIN CONTAINER -->
 
-    <div class="card">
+<div class="container">
 
-        <i class="fa-solid fa-temperature-high"></i>
 
-        <h3>Heating Problem</h3>
 
-        <button onclick="showProblem('heating')">
-            Diagnose
-        </button>
+    <!-- HERO SECTION -->
+
+    <div class="hero-section">
+
+        <div class="main-icon">
+
+            <i class="fa-solid fa-car"></i>
+
+        </div>
+
+        <h1>FAULT FINDER</h1>
+
+        <p class="subtitle">
+            Smart Car Diagnosis System
+        </p>
 
     </div>
 
 
 
+    <!-- DIAGNOSIS CARDS -->
+
+    <div class="button-container">
 
 
-    <div class="card">
+        <div class="card">
 
-        <i class="fa-solid fa-gauge-high"></i>
+            <i class="fa-solid fa-car"></i>
 
-        <h3>Pickup Problem</h3>
+            <h3>Car Not Starting</h3>
 
-        <button onclick="showProblem('pickup')">
-            Diagnose
-        </button>
+            <button onclick="showProblem('start')">
+                Diagnose
+            </button>
 
-    </div>
+        </div>
 
-</div>
 
-        <div id="result">
 
-            Select a problem to diagnose
+
+        <div class="card">
+
+            <i class="fa-solid fa-gauge-high"></i>
+
+            <h3>Low Pickup</h3>
+
+            <button onclick="showProblem('pickup')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-car-side"></i>
+
+            <h3>Jerking / Missing</h3>
+
+            <button onclick="showProblem('jerking')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-gas-pump"></i>
+
+            <h3>Poor Mileage</h3>
+
+            <button onclick="showProblem('mileage')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-temperature-high"></i>
+
+            <h3>Engine Overheating</h3>
+
+            <button onclick="showProblem('overheating')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-snowflake"></i>
+
+            <h3>AC Problems</h3>
+
+            <button onclick="showProblem('ac')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-car-crash"></i>
+
+            <h3>Brake Problems</h3>
+
+            <button onclick="showProblem('brakes')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-gears"></i>
+
+            <h3>Gear &amp; Clutch Problems</h3>
+
+            <button onclick="showProblem('gear')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-car-battery"></i>
+
+            <h3>Battery Problems</h3>
+
+            <button onclick="showProblem('battery')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <h3>Warning Lights</h3>
+
+            <button onclick="showProblem('warning')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-volume-high"></i>
+
+            <h3>Noise Problems</h3>
+
+            <button onclick="showProblem('noise')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-smog"></i>
+
+            <h3>Smoke Problems</h3>
+
+            <button onclick="showProblem('smoke')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-gas-pump"></i>
+
+            <h3>CNG Problems</h3>
+
+            <button onclick="showProblem('cng')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-plug"></i>
+
+            <h3>Electrical Problems</h3>
+
+            <button onclick="showProblem('electrical')">
+                Diagnose
+            </button>
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-car-side"></i>
+
+            <h3>Tyre &amp; Suspension Problems</h3>
+
+            <button onclick="showProblem('tyre')">
+                Diagnose
+            </button>
 
         </div>
 
     </div>
 
-    <script src="script.js"></script>
+
+    <!-- PROFESSIONAL SECTIONS -->
+
+    <div class="info-section">
+
+        <div class="section-heading">
+
+            <h2>How Fault Finder Works</h2>
+
+            <p>From symptom selection to quick recommendations, our system guides you through every step.</p>
+
+        </div>
+
+        <div class="steps-row">
+
+            <div class="step-card">
+
+                <span>01</span>
+
+                <h4>Choose a problem</h4>
+
+                <p>Select the issue that best matches your car's condition.</p>
+
+            </div>
+
+            <div class="step-card">
+
+                <span>02</span>
+
+                <h4>Review the details</h4>
+
+                <p>See the likely causes and what to check quickly.</p>
+
+            </div>
+
+            <div class="step-card">
+
+                <span>03</span>
+
+                <h4>Get repair tips</h4>
+
+                <p>Use the guidance to fix the problem or take it to a mechanic.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature-section">
+
+        <div class="section-heading">
+
+            <h2>Why Choose Fault Finder</h2>
+
+            <p>Fast, accurate, and designed for drivers who want a smarter way to diagnose car faults.</p>
+
+        </div>
+
+        <div class="feature-row">
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <h4>Fast Diagnosis</h4>
+
+                <p>Identify likely car issues in seconds without guesswork.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-user-check"></i>
+
+                <h4>User Friendly</h4>
+
+                <p>Clean layout and easy steps make diagnosis simple for everyone.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-shield-alt"></i>
+
+                <h4>Trusted Advice</h4>
+
+                <p>Helpful guidance based on common automotive problems.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="faq-section">
+
+
+        <div class="section-heading">
+
+            <h2>Frequently asked questions</h2>
+
+        </div>
+
+        <div class="faq-row">
+
+            <div class="faq-card">
+
+                <h4>Is Fault Finder free to use?</h4>
+
+                <p>Yes, it is free to use for all common car issue checks.</p>
+
+            </div>
+
+            <div class="faq-card">
+
+                <h4>Can it diagnose all cars?</h4>
+
+                <p>Fault Finder covers common faults for most cars and helps you narrow down the problem.</p>
+
+            </div>
+
+            <div class="faq-card">
+
+                <h4>What should I do after diagnosis?</h4>
+
+                <p>Follow the suggested checks and consult a mechanic if the issue needs repair.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="cta-section">
+
+        <div class="cta-card">
+
+            <h2>Ready to diagnose your car?</h2>
+
+            <p>Choose a problem from the cards above and get started now.</p>
+
+            <a href="#" class="cta-button">Start Diagnosing</a>
+
+        </div>
+
+    </div>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-links">
+
+            <a href="#">Home</a>
+
+            <a href="#">Diagnose</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Contact</a>
+
+        </div>
+
+        <p>© 2026 FAULT FINDER BY SRS AUTOWORKS . All rights reserved.</p>
+
+    </footer>
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="../js/app.js"></script>
 
 </body>
 </html>
