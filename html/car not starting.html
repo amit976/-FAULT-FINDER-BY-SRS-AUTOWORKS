@@ -41,7 +41,7 @@ class="nav-logo">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/car not starting.css">
+        <link rel="stylesheet" href="../css/car not starting.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
@@ -51,12 +51,25 @@ class="nav-logo">
             Smart Car Diagnosis System
         </p>
 
-        <div class="diagnosis-card">
-            <h2>Car Not Starting Diagnosis</h2>
-            <p class="question-text">Is the self motor cranking?</p>
-            <div class="answer-buttons">
-                <button type="button" class="btn-yes">Yes</button>
-                <button type="button" class="btn-no">No</button>
+        <div class="diagnosis-row">
+            <div class="diagnosis-card">
+                <h2>Car Not Starting Diagnosis</h2>
+                <p class="question-text">Is the self motor cranking?</p>
+                <div class="answer-buttons">
+                    <button type="button" class="btn-yes">Yes</button>
+                    <button type="button" class="btn-no">No</button>
+                </div>
+            </div>
+
+            <div class="video-panel">
+                <h2>Watch the question guide</h2>
+                <div class="video-wrapper">
+                    <video class="diagnosis-video" controls>
+                        <source src="../videos/cranking.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <p class="video-note">This short video helps non-technical users understand the question and answer it correctly.</p>
             </div>
         </div>
 

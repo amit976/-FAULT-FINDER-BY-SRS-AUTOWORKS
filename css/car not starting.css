@@ -100,11 +100,36 @@
 
 }
 
-.diagnosis-card {
+.diagnosis-row {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    justify-content:center;
+
+    align-items:flex-start;
 
     width:100%;
 
-    max-width:720px;
+    margin-top:35px;
+
+}
+
+.diagnosis-card,
+.video-panel {
+
+    flex:1 1 420px;
+
+    min-width:280px;
+
+}
+
+.diagnosis-card {
+
+    width:100%;
 
     background:rgba(255,255,255,0.12);
 
@@ -115,8 +140,6 @@
     border-radius:28px;
 
     padding:40px 38px;
-
-    margin:45px auto 0;
 
     box-shadow:0 20px 55px rgba(0,0,0,0.35);
 
@@ -130,7 +153,8 @@
 
 }
 
-.diagnosis-card h2 {
+.diagnosis-card h2,
+.video-panel h2 {
 
     color:orange;
 
@@ -149,6 +173,68 @@
     line-height:1.7;
 
     margin-bottom:28px;
+
+}
+
+.video-panel {
+
+    width:100%;
+
+    background:rgba(255,255,255,0.10);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,0.14);
+
+    border-radius:28px;
+
+    padding:32px 30px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,0.25);
+
+}
+
+.video-wrapper {
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+}
+
+.diagnosis-video {
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+.video-note {
+
+    color:#cbd5e1;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin-top:18px;
+
+}
+
+@media (max-width: 900px) {
+
+    .diagnosis-row {
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
 
 }
 
