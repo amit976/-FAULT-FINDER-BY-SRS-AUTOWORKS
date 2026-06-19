@@ -100,6 +100,116 @@
 
 }
 
+.diagnosis-card {
+
+    width:100%;
+
+    max-width:720px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,0.14);
+
+    border-radius:28px;
+
+    padding:40px 38px;
+
+    margin:45px auto 0;
+
+    box-shadow:0 20px 55px rgba(0,0,0,0.35);
+
+    transition:0.3s ease;
+
+}
+
+.diagnosis-card:hover {
+
+    transform:translateY(-4px);
+
+}
+
+.diagnosis-card h2 {
+
+    color:orange;
+
+    font-size:30px;
+
+    margin-bottom:22px;
+
+}
+
+.question-text {
+
+    color:#cbd5e1;
+
+    font-size:19px;
+
+    line-height:1.7;
+
+    margin-bottom:28px;
+
+}
+
+.answer-buttons {
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.btn-yes,
+.btn-no {
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px 30px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+    cursor:pointer;
+
+    transition:0.25s ease;
+
+}
+
+.btn-yes {
+
+    background:linear-gradient(to right, orange, gold);
+
+}
+
+.btn-no {
+
+    background:linear-gradient(to right, orange, gold);
+
+
+}
+
+.btn-yes:hover,
+.btn-no:hover {
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+
 .question-header {
 
     margin-bottom:25px;
