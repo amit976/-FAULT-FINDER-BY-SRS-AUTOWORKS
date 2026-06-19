@@ -58,7 +58,7 @@
 
 .problem-subtitle {
 
-    font-size:24px;
+    font-size:50px;
 
     color:#cbd5e1;
 
@@ -100,6 +100,22 @@
 
 }
 
+.subtitle {
+
+    width:auto;
+
+    max-width:none;
+
+    margin:0 0 22px 100px;
+
+    align-self:flex-start;
+
+    text-align:left;
+
+    padding:0;
+
+}
+
 .diagnosis-row {
 
     display:flex;
@@ -108,28 +124,30 @@
 
     gap:30px;
 
-    justify-content:center;
+    justify-content:space-between;
 
     align-items:flex-start;
 
     width:100%;
 
-    margin-top:35px;
+    margin-top:25px;
 
 }
 
 .diagnosis-card,
 .video-panel {
 
-    flex:1 1 420px;
-
-    min-width:280px;
+    min-width:300px;
 
 }
 
 .diagnosis-card {
 
+    flex:1 1 420px;
+
     width:100%;
+
+    max-width:520px;
 
     background:rgba(255,255,255,0.12);
 
@@ -139,11 +157,19 @@
 
     border-radius:28px;
 
-    padding:40px 38px;
+    padding:30px;
+
+    margin-top:45px;
 
     box-shadow:0 20px 55px rgba(0,0,0,0.35);
 
     transition:0.3s ease;
+
+}
+
+.video-panel {
+
+    flex:1 1 560px;
 
 }
 
@@ -168,7 +194,7 @@
 
     color:#cbd5e1;
 
-    font-size:19px;
+    font-size:30px;
 
     line-height:1.7;
 
@@ -180,6 +206,8 @@
 
     width:100%;
 
+    max-width:640px;
+
     background:rgba(255,255,255,0.10);
 
     backdrop-filter:blur(14px);
@@ -188,7 +216,11 @@
 
     border-radius:28px;
 
-    padding:32px 30px;
+    padding:28px 26px;
+
+    margin-top:0;
+
+    transform:translateY(-100px);
 
     box-shadow:0 20px 55px rgba(0,0,0,0.25);
 
@@ -228,11 +260,27 @@
 
 @media (max-width: 900px) {
 
+    .subtitle {
+
+        text-align:left;
+
+        padding-left:10px;
+
+    }
+
     .diagnosis-row {
 
         flex-direction:column;
 
         align-items:center;
+
+    }
+
+    .diagnosis-card,
+
+    .video-panel {
+
+        max-width:100%;
 
     }
 
