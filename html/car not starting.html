@@ -54,19 +54,19 @@ class="nav-logo">
         <div class="diagnosis-row">
             <div class="diagnosis-card">
                 <h2>Car Not Starting Diagnosis</h2>
-                <p class="question-text">Is the self motor cranking?</p>
+                <p class="question-text" id="question">Is the self motor cranking?</p>
                 <div class="answer-buttons">
-                    <button type="button" class="btn-yes">Yes</button>
-                    <button type="button" class="btn-no">No</button>
+                    <button type="button" class="btn-yes" id="yes-btn">Yes</button>
+                    <button type="button" class="btn-no" id="no-btn">No</button>
                 </div>
             </div>
 
             <div class="video-panel">
                 <h2>Watch video to understand your car cranking or not</h2>
                 <div class="video-wrapper">
-                    <video class="diagnosis-video" controls>
-                        <source src="../videos/cranking.mp4" type="video/mp4">
-                        Your browser does not support HTML5 video.
+                    <video class="diagnosis-video" id="diagnosis-video" controls>
+                        <source id="video-source" src="../videos/cranking.mp4" type="video/mp4">
+                    
                     </video>
                 </div>
                 <p class="video-note">This short video helps non-technical users understand the question and answer it correctly.</p>
@@ -74,4 +74,10 @@ class="nav-logo">
         </div>
 
     </div>
+  <!-- JAVASCRIPT -->
+
+  <script src="../js/car not starting.js"></script> 
     
+  
+  
+</body>
